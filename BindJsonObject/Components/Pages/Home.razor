@@ -1,0 +1,22 @@
+﻿@page "/"
+
+@using System.Text.Json
+
+<SfGrid DataSource="@model" AllowPaging="true">
+    <GridPageSettings PageSize="2"></GridPageSettings>
+    <GridColumns>
+        <GridColumn Field="OrderID" HeaderText="OrderID" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field="FirstName" HeaderText="First Name" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field="LastName" HeaderText="Last Name"  TextAlign="TextAlign.Right" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code{
+    public IEnumerable<object> model;
+    protected override void OnInitialized()
+    {
+        var filepath = Path.Combine(AppContext.BaseDirectory, "bind-data.json");
+        var json = System.IO.File.ReadAllText(filepath);
+        this.model= System.Text.Json.JsonSerializer.Deserialize<List<GridData>>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+    }
+}
