@@ -35,7 +35,7 @@ This sample demonstrates how to bind JSON data to the Syncfusion Blazor DataGrid
 
 - For general product questions, visit the [Syncfusion Community Forum](https://www.syncfusion.com/forums) or [Syncfusion Support](https://www.syncfusion.com/support).
 - To report an issue specific to this sample, open a GitHub issue in this repository.
-- Refer to the Syncfusion Blazor DataGrid documentation: https://blazor.syncfusion.com/documentation/datagrid/data-binding
+- Refer to the Syncfusion Blazor DataGrid documentation: https://help.syncfusion.com/grid-sdk/blazor/data-grid/data-binding/data-binding
 
 ## License
 
