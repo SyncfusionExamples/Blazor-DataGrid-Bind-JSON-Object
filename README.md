@@ -14,9 +14,11 @@ This sample demonstrates how to bind JSON data to the Syncfusion Blazor DataGrid
 
 ## Prerequisites
 
-* Visual Studio 2022
+* Visual Studio 2022  or Visual Studio Code
 
 ## How to Run the Project
+
+**Visual Studio 2022**
 
 1. Clone or download this repository.
 2. Open `BindJsonObject.sln` in Visual Studio 2022.
@@ -24,6 +26,17 @@ This sample demonstrates how to bind JSON data to the Syncfusion Blazor DataGrid
 4. Build the project to ensure all dependencies are available.
 5. Run the application using Visual Studio.
 6. Navigate to the page that hosts the Syncfusion DataGrid to view records loaded from the JSON source.
+
+**Visual Studio Code**
+
+1. Open the repository folder in Visual Studio Code.
+2. Open the integrated terminal.
+3. Navigate to the project directory.
+
+```bash
+dotnet restore
+dotnet run
+```
 
 ## Project Structure
 
